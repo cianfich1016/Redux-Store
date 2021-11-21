@@ -2,6 +2,9 @@
   "name": "mern-shopping",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "npm": "7.x"
+  },
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -17,6 +20,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.2",
     "react-redux": "^7.2.6",
     "redux": "^4.1.2"
   }
