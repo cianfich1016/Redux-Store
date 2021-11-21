@@ -14,9 +14,9 @@ const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const state = useSelector((state) => 
-    state
-);
+  const state = useSelector((state) => {
+    return state;
+  });
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   useEffect(() => {

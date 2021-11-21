@@ -10,9 +10,9 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function ProductList() {
   const dispatch = useDispatch();
-  const state = useSelector((state) => 
-    state
-);
+  const state = useSelector((state) => {
+    return state;
+  });
 
   const { currentCategory } = state;
 
