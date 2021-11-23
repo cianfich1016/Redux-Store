@@ -19,7 +19,7 @@
   ## Usage
   Create an account or log in if one has already been created. Explore shopping items. Click to add to cart once one is looking to be purchased. Checkout will then take you to a separate website powered by Stripe to proceed to purchase the item.
 
-  View live link here.
+  View live link [here](https://redux-shopping-1016.herokuapp.com/).
 
   ![Homepage](./client/public/images/home.png)
    ![Add to cart](./client/public/images/add.png)
