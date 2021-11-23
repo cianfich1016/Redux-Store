@@ -56,12 +56,12 @@ export const reducer = (state = initialState, action) => {
         }),
       };
 
-    
+    //Filter through each item in cart. Check if product._id matches action._id. If it does, then remove from cart and newState is set without it.
     case REMOVE_FROM_CART:
       let newState = state.cart.filter((product) => {
         return product._id !== action._id;
       });
-
+      //Return new state. Check to see if cart is empty. If not, then new array is set to cart and returned to newState variable.
       return {
         ...state,
         cartOpen: newState.length > 0,

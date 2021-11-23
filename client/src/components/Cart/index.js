@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from 'react-redux';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
+  //replace with redux useDispatch and useSelector
   const dispatch = useDispatch();
   const state = useSelector((state) => {
     return state;

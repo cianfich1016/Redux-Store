@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ProductItem from '../ProductItem';
+//Replace with Redux logic
 //import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useQuery } from '@apollo/client';
@@ -9,6 +10,7 @@ import spinner from '../../assets/spinner.gif';
 import { useDispatch, useSelector } from 'react-redux';
 
 function ProductList() {
+  //Replace with redux logic
   const dispatch = useDispatch();
   const state = useSelector((state) => {
     return state;
