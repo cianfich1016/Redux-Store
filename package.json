@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "npm": "8.x"
+    "npm": "8.1.4"
   },
   "main": "server/server.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
+    "npm": "^8.1.4",
     "react-redux": "^7.2.6",
     "redux": "^4.1.2"
   }

@@ -19,10 +19,11 @@ const initialState = {
   cartOpen: false
 };
 
-
+//Reducer that accepts action and the state (determined by initialState const) and returns new state.
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
     
+    //Updated products array returned with a copy of state. action.products property spread into new array
     case UPDATE_PRODUCTS:
       return {
         ...state,
@@ -42,6 +43,7 @@ export const reducer = (state = initialState, action) => {
         cart: [...state.cart, ...action.products],
       };
     
+      //Return copy of state. Cart set to open. Map through items. If Item id matches product id in action, update purchase quantity.
     case UPDATE_CART_QUANTITY:
       return {
         ...state,
